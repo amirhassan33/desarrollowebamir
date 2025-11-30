@@ -1,0 +1,25 @@
+{
+  "name": "disenowebperrunonasso",
+  "version": "1.0.0",
+  "description": "<h3 align=\"center\">Es una web para conocer a mis perritos y ofrecer mis servicios de desarrollo web</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirhassan33/desarrollo-web-perruno.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirhassan33/desarrollo-web-perruno/issues"
+  },
+  "homepage": "https://github.com/amirhassan33/desarrollo-web-perruno#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

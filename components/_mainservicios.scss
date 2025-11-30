@@ -1,0 +1,134 @@
+@import "../base/variables";
+@import "../base/extends";
+@import "../base/mixins";
+
+/*-------Este es la pagina servicios-------*/
+
+.cuerpo__servicios {
+    .cuerpo__servicios__caja {
+        padding: 30px;
+
+        .cuerpo__servicios__caja__tituloh2 {
+            color: nth($color, 16);
+            text-decoration: underline;
+            text-align: center;
+            font-size: xx-large;
+            padding: 20px;
+        }
+
+        .cuerpo__servicios__caja__texto1 {
+            margin: 30px;
+            padding: 20px;
+            background-color: rgba(46, 11, 78, 0.103);
+            border-radius: 15px;
+            text-align: center;
+            border-style: dashed;
+            font-size: larger;
+        }
+
+        .cuerpo__servicios__caja__tituloh3 {
+            text-align: center;
+            font-size: x-large;
+            padding: 70px 0px 10px 0px;
+        }
+
+        .cuerpo__servicios__caja__texto2 {
+            margin: 30px 20px 0px 20px;
+            padding: 20px;
+            background-color: rgba(78, 10, 38, 0.103);
+            border-radius: 15px;
+            text-align: center;
+            border-style: dotted;
+            font-size: medium;
+            font-weight: 900;
+        }
+
+        .cuerpo__servicios__caja__texto3 {
+            margin: 30px 20px 0px 20px;
+            padding: 20px;
+            background-color: rgba(27, 61, 214, 0.719);
+            border-radius: 15px;
+            text-align: center;
+            border-style: solid;
+            font-size: medium;
+            font-weight: 900;
+
+            &:hover {
+                animation: visitanos 5s;
+            }
+
+            @keyframes visitanos {
+                0% {
+                    background-color: rgba(27, 61, 214, 0.719);
+                    color: nth($color, 9);
+                }
+
+                25% {
+                    background-color: rgba(51, 61, 107, 0.719);
+                    color: nth($color, 2);
+                }
+
+                50% {
+                    background-color: nth($color, 11);
+                    color: nth($color, 6);
+                }
+
+                75% {
+                    background-color: nth($color, 6);
+                    color: nth($color, 11);
+                }
+
+                100% {
+                    background-color: rgba(27, 61, 214, 0.719);
+                    color: nth($color, 9);
+                }
+            }
+        }
+    }
+}
+
+.container__bootstrap {
+    background-color: rgba(219, 124, 34, 0.103);
+    border-radius: 15px;
+    border-style: double;
+    font-size: large;
+}
+
+.cuerpo__video {
+    @extend %flex;
+
+    .cuerpo__video__tysuby-djbobo {
+        padding: 0px 20px 40px 20px;
+    }
+
+    @media screen and (max-width: 970px) {
+        .cuerpo__video__tysuby-djbobo {
+            @include ancho-largo (40%, 100%);
+        }
+    }
+
+    @media screen and (max-width: 612px) {
+        .cuerpo__video__tysuby-djbobo {
+            @include ancho-largo (70%, 100%);
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .cuerpo__video {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .cuerpo__video {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .cuerpo__video {
+        flex-direction: column;
+    }
+}

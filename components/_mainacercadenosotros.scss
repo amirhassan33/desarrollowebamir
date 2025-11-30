@@ -1,0 +1,214 @@
+@import "../base/variables";
+@import "../base/extends";
+@import "../base/mixins";
+
+/*-------Este es la pagina acerca de nosotros-------*/
+
+.cuerpo__titulo {
+    text-align: center;
+    color: nth($color, 7);
+    padding-top: 40px;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div {
+    .card__bootstrap {
+        border-radius: 20px;
+        background-color: rgb(222, 162, 141);
+        height: 510px;
+
+        .card-body {
+            .card-text::selection {
+                background-color: nth($color, 6);
+            }
+        }
+    }
+}
+
+.cuerpo__paseo {
+    display: flex;
+    justify-content: space-evenly;
+
+    .cuerpo__paseo__imagen {
+        width: 30%;
+
+        &:hover {
+            animation: corazon 5s;
+        }
+
+        @keyframes corazon {
+            0% {
+                width: 30%;
+            }
+
+            25% {
+                width: 35%;
+            }
+
+            50% {
+                width: 30%;
+            }
+
+            75% {
+                width: 35%;
+            }
+
+            100% {
+                width: 30%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1490px) {
+        .cuerpo__paseo__imagen {
+            width: 70%;
+
+            &:hover {
+                animation: corazon 5s;
+            }
+        }
+
+        @keyframes corazon {
+            0% {
+                width: 70%;
+            }
+
+            25% {
+                width: 75%;
+            }
+
+            50% {
+                width: 70%;
+            }
+
+            75% {
+                width: 75%;
+            }
+
+            100% {
+                width: 70%;
+            }
+        }
+    }
+
+    .cuerpo__paseo__caja {
+        @include tarjeta (rgb(210, 188, 231), 450px, 20px, 20px, groove);
+        height: 100%;
+
+        .cuerpo__paseo__caja__imagen {
+            @include ancho-largo (100%, 400px);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .cuerpo__paseo__caja__titulo {
+            text-align: center;
+        }
+
+        .cuerpo__paseo__caja__texto {
+            padding: 10px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .cuerpo__paseo__caja {
+            width: 92%;
+        }
+    }
+}
+
+@media screen and (max-width: 1490px) {
+    .cuerpo__paseo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cuerpo__fiestas {
+    @extend %flex;
+    flex-wrap: wrap;
+
+    .cuerpo__fiestas__caja {
+        @include tarjeta (rgb(231, 205, 255), 450px, 20px, 20px, groove);
+
+        .cuerpo__fiestas__caja__imagen {
+            @include ancho-largo (100%, 400px);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        @media screen and (max-width:480px) {
+            .cuerpo__fiestas__caja__imagen {
+                height: 300px;
+            }
+        }
+
+        .cuerpo__fiestas__caja__titulo {
+            text-align: center;
+        }
+
+        .cuerpo__fiestas__caja__texto {
+            padding: 10px;
+        }
+    }
+}
+
+.cuerpo__vacaciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .cuerpo__vacaciones__caja {
+        @include tarjeta (rgb(255, 205, 251), 500px, 20px, 20px, groove);
+
+        .cuerpo__vacaciones__caja__imagen {
+            @include ancho-largo (100%, 400px);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        @media screen and (max-width:480px) {
+            .cuerpo__vacaciones__caja__imagen {
+                height: 300px;
+            }
+        }
+
+        .cuerpo__vacaciones__caja__titulo {
+            text-align: center;
+        }
+
+        .cuerpo__vacaciones__caja__texto {
+            padding: 10px;
+        }
+    }
+}
+
+.cuerpo__todos {
+    @extend %flex;
+    flex-wrap: wrap;
+
+    .cuerpo__todos__caja {
+        @include tarjeta (rgb(255, 215, 205), 500px, 20px, 20px, groove);
+
+        .cuerpo__todos__caja__imagen {
+            @include ancho-largo (100%, 500px);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        @media screen and (max-width:480px) {
+            .cuerpo__todos__caja__imagen {
+                height: 300px;
+            }
+        }
+
+        .cuerpo__todos__caja__titulo {
+            text-align: center;
+        }
+
+        .cuerpo__todos__caja__texto {
+            padding: 10px;
+        }
+    }
+}

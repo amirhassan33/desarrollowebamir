@@ -1,0 +1,11 @@
+@import "../base/mapas";
+
+/*-------Este es la imagen de fondo que uso en todas las paginas-------*/
+
+.cuerpo {
+    background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(182, 171, 171, 0.74)), url("../img/familia.png");
+    background-position: map-get($contenido-cuadro, posicion-texto);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

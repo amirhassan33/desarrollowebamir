@@ -1,0 +1,30 @@
+@import "../base/mixins";
+
+/*-------Este es el whats app fijo que esta en todas las paginas-------*/
+
+.cuerpo__icono {
+    .cuerpo__icono__position {
+        .cuerpo__icono__position__link {
+            .cuerpo__icono__position__imagen {
+                @include ancho-largo (100px, 100px);
+                position: fixed;
+                bottom: 150px;
+                right: 30px;
+                transition-property: width height;
+                transition-duration: 3s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0.5s;
+
+                &:hover {
+                    @include ancho-largo (120px, 120px);
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .cuerpo__icono__position__imagen {
+                    @include ancho-largo (60px, 60px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@mixin tarjeta ($bg, $ancho, $margen, $br, $bs) {
+    background-color: $bg;
+    width: $ancho;
+    margin: $margen;
+    border-radius: $br;
+    border-style: $bs;
+}
+
+@mixin ancho-largo($ancho, $largo) {
+    width: $ancho;
+    height: $largo;
+}

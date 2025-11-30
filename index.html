@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Esta pagina web esta creada y diseñada por Cristian Alejandro Nasso. En este sitio se ofrecen servicios de diseño y desarrollo web Full Stack. También conocer a mi familia perruna, actividades y festejos.">
+    <meta name="keywords"
+        content="desarrollo, diseño, desarrollo web, diseño web, full stack java, desarrollo back end, desarrollo front end, servicio de desarrollo web, servicio de diseño web, crear pagina web, Cristian Alejandro Nasso, diseñar pagina web, desarrollar pagina web, familia perruna, nuestra raza">
+    <meta property="og:type" content="web site">
+    <meta property="og:title" content="Desarrollador Web Full Stack Java Freelance - Servicios">
+    <meta property="og:url" content="https://desarrollowebperruno.000webhostapp.com/">
+    <meta property="og:image" content="https://desarrollowebperruno.000webhostapp.com/img/perritoalegre.png">
+    <meta property="og:description"
+        content="Esta pagina web esta creada y diseñada por Cristian Alejandro Nasso. En este sitio se ofrecen servicios de diseño y desarrollo web Full Stack Java. También conocer a mi familia, actividades y festejos.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/perritoalegre-favicon.png" type="image/x-icon">
+    <title>Desarrollador Web Full Stack Freelance</title>
+</head>
+
+<body>
+    <header>
+        <!--Esto es el header-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img
+                        class="imagen_navbar animate__animated animate__rubberBand" title="Pagina principal"
+                        src="./img/logo.png" alt="Logo con perrito feliz"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html"><img src="./img/home.png"
+                                    title="Inicio" alt="Casa"> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nuestraraza.html"><img src="./img/dog.png"
+                                    title="Nuestra raza" alt="Perro"> Nuestra raza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html"><img src="./img/briefcase.png"
+                                    title="Servicios" alt="Trabajo"> Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/acercadenosotros.html"><img src="./img/heart.png"
+                                    title="Acerca de nosotros" alt="Corazon"> Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html"><img src="./img/mensaje.png"
+                                    title="Contacto" alt="Mensaje">
+                                Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cuerpo">
+        <!--Esto es el main-->
+        <section>
+            <!--Aqui aplique bootstrap-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/playa.png" class="d-block w-100" alt="Perritos en la playa">
+                        <div class="carousel-caption">
+                            <h5 class="text text-primary fw-bold">Conoce donde vamos de vacaciones</h5>
+                            <a class="btn btn-sm btn-primary" title="Acerca de nosotros"
+                                href="./pages/acercadenosotros.html" role="button">Vamos a
+                                ver</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/chihuahuacomputadora.png" class="d-block w-100"
+                            alt="Perrito con la computadora">
+                        <div class="carousel-caption">
+                            <h5 class="text text-success fw-bold">Mira los servicios que ofrecemos</h5>
+                            <a class="btn btn-sm btn-success" title="Servicios" href="./pages/servicios.html"
+                                role="button">Vamos a
+                                ver</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/perritotelefono.png" class="d-block w-100" alt="Perrito con un telefono">
+                        <div class="carousel-caption">
+                            <h5 class="text text-danger fw-bold">Contactate con nosotros</h5>
+                            <a class="btn btn-sm btn-danger" title="Contacto" href="./pages/contacto.html"
+                                role="button">Click aqui</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/nuestraraza.png" class="d-block w-100" alt="Muchos perritos">
+                        <div class="carousel-caption">
+                            <h5 class="text text-warning fw-bold">Conoce todo sobre nuestra raza</h5>
+                            <a class="btn btn-sm btn-warning" title="Nuestra raza" href="./pages/nuestraraza.html"
+                                role="button">Vamos a
+                                ver</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="cuerpo__principal">
+            <div class="cuerpo__principal__caja">
+                <div class="cuerpo__principal__caja__flex">
+                    <img class="cuerpo__principal__caja__flex__imagen" src="./img/perritoalegre.png"
+                        alt="Perrito alegre">
+                    <h1 class="cuerpo__principal__caja__flex__titulo">Desarrollo Web Perruno Full Stack</h1>
+                    <img class="cuerpo__principal__caja__flex__imagen" src="./img/perritopaseando.png"
+                        alt="Perrito paseando">
+                </div>
+                <div class="cuerpo__principal__caja__texto">
+                    <p class="cuerpo__principal__caja__texto__descripcion">Hola mi nombre es Cristian Alejandro Nasso.
+                        Soy desarrollador Full Stack Java, Python y PHP. Creo el back y
+                        front de tu pagina web. Dame tu idea, trabajemos juntos y deja que te devuelva una pagina web de
+                        otro planeta! Hablas directo con el diseñador y creador de tu proyecto, sin intermediarios, más
+                        rápido y sin errores.</p>
+                    <a class="cuerpo__principal__caja__texto__boton" title="Servicios" href="./pages/servicios.html">Ir
+                        a servicios</a>
+                    <p class="cuerpo__principal__caja__texto__descripcion">De paso te presento a ellos, los perros mas
+                        famosos de Nuñez. Encargados de edificios, diarieros, negocios y vecinos del barrio los esperan
+                        en el paseo de la mañana y de la tarde para saludarlos y convidarles una rica galletita. Estas
+                        preparado para conocerlos???</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cuerpo__ellos">
+            <!--Esta es la seccion que aplique la grilla-->
+            <div class="cuerpo__ellos__item cuerpo__ellos__item1">
+                <img class="cuerpo__ellos__item__imagen" src="./img/salto.png" alt="Perros chocando patitas">
+            </div>
+            <div class="cuerpo__ellos__item cuerpo__ellos__item2">
+                <img class="cuerpo__ellos__item__imagen" src="./img/juegan.png" alt="Perros y gatos jugando">
+            </div>
+            <div class="cuerpo__ellos__itemcaja cuerpo__ellos__item3">
+                <img class="cuerpo__ellos__item__imagenellos" src="./img/amir.png" alt="Amir">
+                <h3 class="cuerpo__ellos__item__titulo">Amir</h3>
+                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Amir, tengo 10 años y el 16 de julio cumplo 11
+                    años. Soy chihuahua macho de pelo corto y color blanco.</p>
+            </div>
+            <div class="cuerpo__ellos__itemcaja cuerpo__ellos__item4">
+                <img class="cuerpo__ellos__item__imagenellos" src="./img/yamil.png" alt="Yamil">
+                <h3 class="cuerpo__ellos__item__titulo">Yamil</h3>
+                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Yamil, tengo 9 años y el 6 de octubre cumplo 10
+                    años. Soy chihuahua macho de pelo corto y color marron.</p>
+            </div>
+            <div class="cuerpo__ellos__itemcaja cuerpo__ellos__item5">
+                <img class="cuerpo__ellos__item__imagenellos" src="./img/denzel.png" alt="Denzel">
+                <h3 class="cuerpo__ellos__item__titulo">Denzel</h3>
+                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Denzel, tengo 7 años y el 4 de octubre cumplo 8
+                    años. Soy chihuahua macho de pelo largo y color negro.</p>
+            </div>
+            <div class="cuerpo__ellos__itemcaja cuerpo__ellos__item6">
+                <img class="cuerpo__ellos__item__imagenellos" src="./img/noah.png" alt="Noah">
+                <h3 class="cuerpo__ellos__item__titulo">Noah</h3>
+                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Noah, tengo 6 años y el 13 de octubre cumplo 7
+                    años. Soy chihuahua macho de pelo corto y color negro.</p>
+            </div>
+            <div class="cuerpo__ellos__item cuerpo__ellos__item7">
+                <img class="cuerpo__ellos__item__imagen" src="./img/collarflores.png"
+                    alt="Perritos con collar de flores">
+            </div>
+            <div class="cuerpo__ellos__item cuerpo__ellos__item8">
+                <img class="cuerpo__ellos__item__imagen" src="./img/alegria.png" alt="Perrito alegre">
+            </div>
+            <div class="cuerpo__ellos__item cuerpo__ellos__item9">
+                <img class="cuerpo__ellos__item__imagen" src="./img/atento.png" alt="Perrito atento">
+            </div>
+        </section>
+
+        <section class="cuerpo__especial">
+            <h2 class="cuerpo__especial__titulo">Nuestros dias especiales y de festejo</h2>
+            <div class="cuerpo__especial__caja">
+                <div class="cuerpo__especial__caja__izquierda">
+                    <img class="cuerpo__especial__caja__izquierda__imagen" src="./img/navidad.png"
+                        alt="Amir con gorrito de navidad">
+                </div>
+                <div class="cuerpo__especial__caja__derecha">
+                    <img class="cuerpo__especial__caja__derecha__imagen" src="./img/happy-birthday.png"
+                        alt="Feliz cumpleaños">
+                    <p class="cuerpo__especial__caja__derecha__texto">Aca vas a conocer nuestros dias festivos con
+                        nuestros padres perrunos. Cumpleaños, navidades y todos los dias especiales que nos encanta
+                        pasar en familia.</p>
+                    <a class="cuerpo__especial__caja__derecha__ruta" title="Acerca de nosotros"
+                        href="./pages/acercadenosotros.html">Conocenos</a>
+                    <img class="cuerpo__especial__caja__derecha__imagen" src="./img/hello-summer.png" alt="Hola verano">
+                </div>
+            </div>
+        </section>
+
+        <section class="cuerpo__conocelos">
+            <h2 class="cuerpo__conocelos__titulo">Conoce todo sobre nuestra raza</h2>
+            <div class="cuerpo__conocelos__caja">
+                <div class="cuerpo__conocelos__caja__descripcion">
+                    <p class="cuerpo__conocelos__caja__descripcion__texto">Conoce nuestra historia, apariencia,
+                        temperamento, salud, alimentación, gestación y parto y toda la informacion y detalles de nuestra
+                        hermosa, espectacular, especial y loca raza.</p>
+                    <a class="cuerpo__conocelos__caja__descripcion__ruta" title="Nuestra raza"
+                        href="./pages/nuestraraza.html">Descubrinos</a>
+                </div>
+                <div class="cuerpo__conocelos__caja__imagen">
+                    <img class="cuerpo__conocelos__caja__imagen__grupo" src="./img/chihuahuasengrupo.png"
+                        alt="chihuahuas en grupo">
+                </div>
+            </div>
+        </section>
+
+        <section class="cuerpo__icono">
+            <div class="cuerpo__icono__position">
+                <a class="cuerpo__icono__position__link" title="WhatsApp" target="_blank"
+                    href="https://wa.me/+5491136260941">
+                    <img class="cuerpo__icono__position__imagen" src="./img/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <!--Esto es el footer-->
+        <div class="pie__caja">
+            <div class="pie__caja__redessociales">
+                <a class="pie__caja__ruta" href="https://www.facebook.com/cristian.nasso" target="_blank"><img
+                        class="pie__caja__imagen" src="./img/facebook.png" title="Conoce mi Facebook"
+                        alt="Facebook"></a>
+                <a class="pie__caja__ruta" href="https://www.instagram.com/cristianalejandronasso/" target="_blank"><img
+                        class="pie__caja__imagen" src="./img/instagram.png" title="Conoce mi Instagram"
+                        alt="Instagram"></a>
+                <a class="pie__caja__ruta" href="https://twitter.com/nasso_cristian" target="_blank"><img
+                        class="pie__caja__imagen" src="./img/twitter.png" title="Conoce mi Twitter" alt="Twitter"></a>
+                <a class="pie__caja__ruta" href="https://www.linkedin.com/in/cristian-alejandro-nasso-21375720/"
+                    target="_blank"><img class="pie__caja__imagen" src="./img/linkedin.png" title="Conoce mi LinkedIn"
+                        alt="LinkedIn"></a>
+            </div>
+            <div class="pie__caja__datos">
+                <p class="pie__caja__datos__texto">Cristian Alejandro Nasso. <br> Direccion personal mi casa perruna.
+                    <br>
+                    Capital Federal. Nuñez. <br> Codigo Postal 1429. <br> cristiannasso2@gmail.com
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

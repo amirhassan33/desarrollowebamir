@@ -1,0 +1,54 @@
+@import "../base/variables";
+@import "../base/mapas";
+@import "../base/mixins";
+
+/*-------Este es el footer-------*/
+
+.pie {
+    .pie__caja {
+        background: #ff6200;
+        display: flex;
+        justify-content: space-between;
+
+        .pie__caja__redessociales {
+            .pie__caja__imagen {
+                @include ancho-largo (100px, 100px);
+                margin: 10px;
+                transition-property: width height;
+                transition-duration: 1s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0.5s;
+
+                &:hover {
+                    @include ancho-largo (120px, 120px);
+                    background-color: nth($color, 2);
+                    border-radius: 100px;
+                }
+            }
+
+            @media screen and (max-width: 520px) {
+                .pie__caja__imagen {
+                    display: block;
+                }
+            }
+        }
+
+        .pie__caja__datos {
+            .pie__caja__datos__texto {
+                @include ancho-largo (100%, 120px);
+                font-size: medium;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                display: flex;
+                align-items: map-get($contenido-cuadro, posicion-texto);
+            }
+        }
+    }
+
+    @media screen and (max-width: 920px) {
+        .pie__caja {
+            flex-direction: column;
+            text-align: map-get($contenido-cuadro, posicion-texto);
+            align-items: map-get($contenido-cuadro, posicion-texto);
+        }
+    }
+}

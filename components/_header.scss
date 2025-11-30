@@ -1,0 +1,45 @@
+@import "../base/variables";
+@import "../base/mapas";
+@import "../base/mixins";
+
+/*-------Este es el header-------*/
+
+header {
+    .navbar {
+        background: #ff6200;
+
+        div {
+            .imagen_navbar {
+                @include ancho-largo (100px, 100px);
+            }
+
+            div {
+                ul {
+                    li {
+                        .nav-link {
+                            background-color: nth($color, 6);
+                            padding: 3px;
+                            margin: 4px;
+                            border-radius: 10px;
+                            border-style: solid;
+                            font-size: large;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            transition: 3s;
+
+                            &:hover {
+                                transform: rotateX(360deg);
+                                background-color: rgb(35, 211, 35);
+                            }
+                        }
+
+                        @media screen and (max-width: 1000px) {
+                            .nav-link {
+                                text-align: map-get($contenido-cuadro, posicion-texto);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
