@@ -77,7 +77,7 @@
 
         <section>
             <!--Aqui aplique bootstrap-->
-            <form action="https://formsubmit.co/cristiannasso2@gmail.com" method="POST" class="row w-100 p-3 g-3">
+            <!--<form action="https://formsubmit.co/cristiannasso2@gmail.com" method="POST" class="row w-100 p-3 g-3">
                 
                 <div class="col-md-6">
                     <label for="inputnombre" class="form-label">Nombre completo</label>
@@ -141,12 +141,90 @@
                     <textarea class="form-control" id="areadetexto" style="height: 100px"></textarea>
                     <label for="areadetexto">Deja tu comentario aqui</label>
                 </div>
-                <input type="hidden" name="_next" value="https://amirhassan33.github.io/desarrollowebamir/pages/contacto.html">
+                
                 <div class="col-12 d-flex justify-content-center">
                     <button type="submit" title="Enviar" class="btn btn-primary m-2 mb-3">Enviar</button>
                     <button type="reset" title="Borrar" class="btn btn-success m-2 mb-3">Borrar</button>
                 </div>
-            </form>
+            </form>-->
+            <form action="https://formsubmit.co/cristiannasso2@gmail.com" method="POST" class="row w-100 p-3 g-3">
+
+    <!-- Redirección después del envío -->
+    <input type="hidden" name="_next" value="https://amirhassan33.github.io/desarrollowebamir/pages/gracias.html">
+
+    <div class="col-md-6">
+        <label for="inputnombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="inputnombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputapellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="inputapellido" name="apellido" placeholder="Ingresa tu apellido" required>
+    </div>
+
+    <div class="col-12">
+        <label for="inputdireccion" class="form-label">Dirección</label>
+        <input type="text" class="form-control" id="inputdireccion" name="direccion" placeholder="Ingresa tu dirección">
+    </div>
+
+    <div class="col-12">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputtelefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="inputtelefono" name="telefono" placeholder="Ingresa tu teléfono">
+    </div>
+
+    <div class="col-md-4">
+        <label for="inputpais" class="form-label">País</label>
+        <select id="inputpais" class="form-select form-control" name="pais">
+            <option selected>Elegi tu país</option>
+            <option>Argentina</option>
+            <option>Peru</option>
+            <option>Chile</option>
+            <option>Uruguay</option>
+            <option>Paraguay</option>
+        </select>
+    </div>
+
+    <div class="col-md-2">
+        <label for="inputcodigopostal" class="form-label">C. postal</label>
+        <input type="text" class="form-control" id="inputcodigopostal" name="codigo_postal" placeholder="Código postal">
+    </div>
+
+    <div>
+        <label class="form-label">Ingresa tu sexo</label>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sexo" value="Masculino">
+            <label class="form-check-label">Masculino</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sexo" value="Femenino">
+            <label class="form-check-label">Femenino</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sexo" value="Otro">
+            <label class="form-check-label">Otro</label>
+        </div>
+    </div>
+
+    <div class="form-floating">
+        <textarea class="form-control" id="areadetexto" name="comentario" style="height: 100px"></textarea>
+        <label for="areadetexto">Deja tu comentario aquí</label>
+    </div>
+
+    <div class="col-12 d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary m-2 mb-3">Enviar</button>
+        <button type="reset" class="btn btn-success m-2 mb-3">Borrar</button>
+    </div>
+
+</form>
+
         </section>
 
         <section class="cuerpo__mapa">
